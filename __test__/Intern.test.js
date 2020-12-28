@@ -2,11 +2,16 @@ const { test, expect } = require('@jest/globals');
 const Employee = require('../lib/Employee');
 
 class Intern extends Employee {
-    constructor(name, id, email) {
+    constructor(name, id, email, school) {
         super(name, id, email);
+
+        this.school = school;
     };
     getRole() {
         return `Intern`
+    };
+    getSchool() {
+        return `${this.school}`
     };
 };
 
@@ -34,3 +39,9 @@ test('get Intern role', () => {
     expect(intern.getRole()).toBe('Intern');
     console.log('role', intern);
 });
+test('get Intern school', () => {
+    const intern = new Intern('', '', '', 'UF');
+
+    expect(intern.getSchool()).toBe('UF');
+    console.log('school', intern);
+})
