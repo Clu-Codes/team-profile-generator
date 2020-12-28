@@ -2,11 +2,16 @@ const { expect, test } = require('@jest/globals');
 const Employee = require('../lib/Employee');
 
 class Engineer extends Employee {
-    constructor(name, id, email) {
-        super(name, id, email)
+    constructor(name, id, email, github) {
+        super(name, id, email);
+
+        this.github = github;
     }
     getRole() {
         return `Engineer`
+    };
+    getGithub() {
+        return `${this.github}`
     };
 }
 
@@ -31,5 +36,11 @@ test('get Engineer role', () => {
 
     expect(engineer.getRole()).toBe('Engineer');
     console.log('Role', engineer);
-})
+});
+test('get Engineer github', () => {
+    const engineer = new Engineer('', '', '', 'github.com/fred-codes');
+
+    expect(engineer.getGithub()).toBe('github.com/fred-codes');
+    console.log('github', engineer);
+});
 
