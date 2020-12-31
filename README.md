@@ -19,9 +19,8 @@ This modular application allows one to quickly and easily generate a work place'
 ## License
 This application is under the MIT license.
 
-
-
-
+## Video Walkthrough
+Video: https://drive.google.com/file/d/1QE6CbPlB0_SmpyoYB3nvVFFkiBZIMDLh/view?usp=sharing
 
 
 

@@ -13,21 +13,6 @@ class Engineer extends Employee {
     getGithub() {
         return `${this.github}`
     };
-    generateEngineer() {
-        return `
-        <div class="card" style="width: 18rem;">
-      <div class="card-header">
-        ${getName()}
-        ${getRole()}
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${getId()}</li>
-        <li class="list-group-item">Email: ${getEmail()}</li>
-        <li class="list-group-item">Github: ${getGithub()}</li>
-      </ul>
-    </div>
-    `
-    };
 }
 
 test('gets Engineer name', () => {
@@ -58,23 +43,5 @@ test('get Engineer github', () => {
     expect(engineer.getGithub()).toBe('github.com/fred-codes');
     console.log('github', engineer);
 });
-test('generate Engineer card', () => {
-    const engineer = new Engineer('Fred', '1', 'test@test.com', 'test');
 
-    expect(engineer.generateEngineer()).toBe(`
-    <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    ${this.getName()}
-    ${this.getRole()}
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">ID: ${this.getId()}</li>
-    <li class="list-group-item">Email: ${this.getEmail()}</li>
-    <li class="list-group-item">Github: ${this.getGithub()}</li>
-  </ul>
-</div>
-`);
-
-console.log('card', engineer);
-})
 
