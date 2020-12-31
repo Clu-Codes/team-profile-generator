@@ -20,7 +20,7 @@ const queryManager = [
     {
         type: 'text',
         name: 'name',
-        message: 'What is your name?',
+        message: "What's the Manager's name?",
         validate: nameInput => {
             if (nameInput) return true; console.log('No name was entered. Please enter your name.'); return false;
         }
@@ -28,7 +28,7 @@ const queryManager = [
     {
         type: 'text',
         name: 'id',
-        message: 'What is your employee id?',
+        message: "What's the Manager's employee id?",
         validate: idInput => {
             if (idInput) return true; console.log('No id was entered. Please enter your id.'); return false;
         }
@@ -36,7 +36,7 @@ const queryManager = [
     {
         type: 'text',
         name: 'email',
-        message: 'What is your email?',
+        message: "What's the Manager's email address?",
         validate: emailInput => {
             if (emailInput) return true; console.log('No email was entered. Please enter your email.'); return false;
         }
@@ -44,7 +44,7 @@ const queryManager = [
     {
         type: 'text',
         name: 'office',
-        message: "What is the Officer's office number?",
+        message: "What is the Manager's office number?",
         validate: officeInput => {
             if (officeInput) return true; console.log('No office number was entered. Please enter an office number'); return false;
         },
@@ -55,7 +55,7 @@ const queryEngineer = [
     {
         type: 'text',
         name: 'name',
-        message: 'What is your name?',
+        message: "What's the Engineer's name?",
         validate: nameInput => {
             if (nameInput) return true; console.log('No name was entered. Please enter your name.'); return false;
         }
@@ -63,7 +63,7 @@ const queryEngineer = [
     {
         type: 'text',
         name: 'id',
-        message: 'What is your employee id?',
+        message: "What's the Engineer's id?",
         validate: idInput => {
             if (idInput) return true; console.log('No id was entered. Please enter your id.'); return false;
         }
@@ -71,7 +71,7 @@ const queryEngineer = [
     {
         type: 'text',
         name: 'email',
-        message: 'What is your email?',
+        message: "What's the Engineer's email address?",
         validate: emailInput => {
             if (emailInput) return true; console.log('No email was entered. Please enter your email.'); return false;
         }
@@ -90,7 +90,7 @@ const queryIntern = [
     {
         type: 'text',
         name: 'name',
-        message: 'What is your name?',
+        message: "What's the Intern's name?",
         validate: nameInput => {
             if (nameInput) return true; console.log('No name was entered. Please enter your name.'); return false;
         }
@@ -98,7 +98,7 @@ const queryIntern = [
     {
         type: 'text',
         name: 'id',
-        message: 'What is your employee id?',
+        message: "What's the Intern's id?",
         validate: idInput => {
             if (idInput) return true; console.log('No id was entered. Please enter your id.'); return false;
         }
@@ -106,7 +106,7 @@ const queryIntern = [
     {
         type: 'text',
         name: 'email',
-        message: 'What is your email?',
+        message: "What's the Intern's email address?",
         validate: emailInput => {
             if (emailInput) return true; console.log('No email was entered. Please enter your email.'); return false;
         }

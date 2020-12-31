@@ -42,7 +42,11 @@ function template(responseData) {
         </div>
     </header>
     <section>
+    <div class="container">
+      <div class="row">
         ${generateCard(responseData)}
+      </div>
+    </div>
     </section>
 </body>
 </html>
