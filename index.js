@@ -79,7 +79,7 @@ const queryEngineer = [
     {
         type: 'text',
         name: 'github',
-        message: "What is the Engineer's github?",
+        message: "What is the Engineer's github? Ex.'github.com/tester-codes'",
         validate: officeInput => {
             if (officeInput) return true; console.log('No github  was entered. Please enter a github'); return false;
         },
